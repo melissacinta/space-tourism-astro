@@ -1,0 +1,14 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1440" height="900" fill="#0B0D17"/>
+<mask id="mask0_0_1530" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="900">
+<rect width="1440" height="900" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_1530)">
+<g style="mix-blend-mode:screen">
+<rect x="485.52" y="965.52" width="2085.04" height="954" transform="rotate(-90 485.52 965.52)"/>
+</g>
+<g style="mix-blend-mode:screen">
+<rect x="485.923" y="-2108.35" width="4576.6" height="2094" transform="rotate(90 485.923 -2108.35)"/>
+</g>
+</g>
+</svg>

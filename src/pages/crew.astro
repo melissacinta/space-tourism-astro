@@ -1,0 +1,38 @@
+---
+import SliderIndicators from '../components/SliderIndicators.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Crew" styles="bg-crew-sm md:bg-crew-md lg:bg-crew-lg">
+  <div
+    class="px-6 lg:pl-40 lg:pr-28 x-large:pl-[10.40625rem] x-large:pr-[10.1875rem] pt-[5.5rem] md:pt-[8.5rem] lg:pt-[13.25rem] x-large:pt-[23.55vh] min-h-[80vh] pb-12 lg:pb-0 grid lg:grid-cols-2"
+  >
+    <div class="h-full flex flex-col justify-between">
+      <p
+        class="font-barlow-condensed text-base tracking-[2.7px] md:text-xl md:leading-6 md:tracking-[3.38px] lg:text-[1.75rem] lg:tracking-[4.72px] uppercase"
+      >
+        <span class="text-white/25 font-bold">02</span>
+        <span class="text-white font-normal">Meet your crew</span>
+      </p>
+      <div>
+        <span
+          class="text-[2rem] text-white/[50.42%] leading-[2.313rem] uppercase"
+          >Commander</span
+        >
+        <h2 class="text-[3.5rem] leading-[4rem] text-white">Douglas Hurley</h2>
+
+        <p class="text-secondary w-full max-w-[27.75rem] text-lg leading-8">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps
+          pilot and former NASA astronaut. He launched into space for the third
+          time as commander of Crew Dragon Demo-2.
+        </p>
+      </div>
+      <div>
+        <SliderIndicators />
+      </div>
+    </div>
+    <div class="">
+      <img src="/assets/crew/image-douglas-hurley.png" alt="" />
+    </div>
+  </div>
+</Layout>

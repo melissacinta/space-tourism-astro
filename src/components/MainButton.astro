@@ -1,0 +1,21 @@
+---
+export interface Props {
+  type?: 'submit' | 'reset' | 'button';
+}
+
+const { type } = Astro.props as Props;
+---
+
+<div class="relative group inline-block rounded-full overscroll-contain">
+  <div
+    class="hidden group-hover:inline-block opacity-0 absolute -inset-11 md:-inset-[5.5rem] bg-white group-hover:opacity-[10.36%] w-[14.875rem] h-[14.875rem] md:w-[26.125rem] md:h-[26.125rem] lg:w-[28.125rem] lg:h-[28.125rem] rounded-full transition-all ease-in-out duration-500"
+    aria-hidden="true"
+  >
+  </div>
+  <button
+    type={type || 'button'}
+    class="relative font-bellefair text-sm md:text-[2rem] uppercase h-[9.375rem] w-[9.375rem] md:h-[15.125rem] md:w-[15.125rem] lg:h-[17.125rem] lg:w-[17.125rem] bg-white text-primary rounded-full tracking-[2px] transition-all ease-in-out"
+  >
+    Explore
+  </button>
+</div>

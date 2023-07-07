@@ -1,0 +1,30 @@
+---
+export interface Props {
+  active?: string;
+}
+import { classNames } from '../js/utils';
+const { active } = Astro.props as Props;
+
+const navItems = ['moon', 'mars', 'europa', 'titan'];
+---
+
+<nav class="h-9">
+  <ul class="flex items-center gap-7 md:gap-8 h-full">
+    {
+      navItems.map((item) => (
+        <li class="h-full">
+          <button
+            class={classNames(
+              active === item
+                ? 'border-white text-white'
+                : 'border-transparent text-secondary',
+              'uppercase text-base h-full flex border-b-[3px] items-start gap-2 hover:text-secondary hover:border-[#ffffff80]'
+            )}
+          >
+            <span>{item}</span>
+          </button>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

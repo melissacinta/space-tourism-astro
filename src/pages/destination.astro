@@ -1,0 +1,66 @@
+---
+import Tabs from '../components/Tabs.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Destination"
+  styles="bg-destination-sm md:bg-destination-md lg:bg-destination-lg"
+>
+  <div
+    class="px-6 lg:pl-40 lg:pr-28 x-large:pl-[10.40625rem] x-large:pr-[10.1875rem] pt-[5.5rem] md:pt-[8.5rem] lg:pt-[13.25rem] x-large:pt-[23.55vh] min-h-[80vh] pb-12"
+  >
+    <p
+      class="font-barlow-condensed text-base tracking-[2.7px] md:text-xl md:leading-6 md:tracking-[3.38px] lg:text-[1.75rem] lg:tracking-[4.72px] uppercase"
+    >
+      <span class="text-white/25 font-bold">01</span>
+      <span class="text-white font-normal">Pick your destination</span>
+    </p>
+    <div
+      class="pt-8 md:pt-16 gap-4 flex justify-between items-center lg:items-start text-center lg:text-left flex-col lg:flex-row"
+    >
+      <div class="block lg:h-[27.8125rem] lg:pl-10 flex-shrink-0">
+        <img
+          src="/assets/destination/image-mars.webp"
+          class="object-cover h-[10.625rem] w-[10.625rem] md:h-[18.75rem] md:w-[18.75rem] lg:h-[27.8125rem] lg:w-[27.8125rem]"
+        />
+      </div>
+      <div class="text-white max-w-[27.8125rem]">
+        <div class="flex justify-center lg:justify-start">
+          <Tabs active="moon" />
+        </div>
+        <h2
+          class="text-[3.5rem] leading-[4rem] md:text-[5rem] md:leading-[5.75rem] lg:text-[6.25rem] lg:leading-[7.1875rem] text-white uppercase font-bellefair mt-5 md:mt-9"
+        >
+          Moon
+        </h2>
+        <p
+          class="text-secondary text-[0.9375rem] leading-[1.5625rem] md:text-base md:leading-7 lg:text-lg lg:leading-8 max-w-[20.4375rem] md:max-w-[27.75rem] font-normal"
+        >
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+        <div
+          class="flex flex-col md:flex-row items-center md:items-start md:justify-center lg:justify-start gap-8 md:gap-[4.9375rem] uppercase font-bellefair text-sm leading-[1.0625rem] text-secondary pt-8 mt-8 md:pt-7 border-t border-[#383B4B] md:mt-[3.375rem]"
+        >
+          <div class="flex flex-col gap-3">
+            <span class="tracking-[2.362px]">Avg. distance</span><span
+              class="text-white text-[1.75rem] leading-8"
+            >
+              384,400 km</span
+            >
+          </div>
+          <div class="flex flex-col gap-3">
+            <span class="tracking-[2.362px]">Est. travel time</span><span
+              class="text-white text-[1.75rem] leading-8"
+            >
+              3 days</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

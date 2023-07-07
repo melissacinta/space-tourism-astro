@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 11 13 23;
+    --color-secondary: 208 214 249;
+  }
+
+  html {
+    font-family: 'Barlow', sans-serif;
+  }
+
+}
